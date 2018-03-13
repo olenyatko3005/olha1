@@ -11,6 +11,8 @@ wp-content/backupwordpress-*/
 wp-content/managewp/backups/
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
+wp-content/themes/understrap-child/node_modules
+.htaccess
 sitemap.xml
 sitemap.xml.gz
 *.log
