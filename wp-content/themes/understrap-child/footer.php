@@ -33,7 +33,7 @@ $container   = get_theme_mod( 'understrap_container_fluid_type' );
 								<li class="row">
 									<a class="col-2" href="#"><i class="fa fa-map-marker fa-2x contact-icon" aria-hidden="true"></i></a>
 									<div class="col-10">
-										<address>Address: <?php echo get_theme_mod( 'address_text' ); ?></address>
+										<address>Address:: <?php echo get_theme_mod( 'address_text' ); ?></address>
 									</div>
 								</li>
 							</ul>
