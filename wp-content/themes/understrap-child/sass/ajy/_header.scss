@@ -1,0 +1,38 @@
+//header
+
+.button-style-click .active {
+	//background-image: url(../img/close.png);
+}
+
+.header-style {
+	background-color: $background-color-nav;
+}
+
+.nav-style {
+	li {
+		padding: 10px 0;
+		margin: 0 10px;
+	}		
+	.navbar-nav a.nav-link {
+		text-align: center;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		color: $main-font-color;
+		&:hover,
+		&:active, &:focus {
+			color: $main-site-color;
+		}
+	}
+	.navbar-nav .active .nav-link {
+		color: $main-site-color;
+	}
+}
+
+.nav-button-style {
+	background-color: $main-site-color;
+	margin-right: 20px;
+	padding: 10px;
+	&:focus {
+		outline: none;
+	}
+}

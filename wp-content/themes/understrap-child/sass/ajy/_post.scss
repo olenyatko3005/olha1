@@ -1,0 +1,47 @@
+//post
+
+.post-style {
+	font-size: 1.2rem;
+	border: 1px solid rgba(0,0,0,0.2);
+	//padding-bottom: 50px;
+	h3 {
+		font-size: 2.4rem;
+		color: $post-title-color;
+	}
+	img {
+		float:left;
+		margin: 0 15px 15px 0;
+	}
+	h2 {
+		font-size: 1.8rem;
+		padding: 15px 15px 25px;
+		font-weight: bold;
+		color: $post-title-color;
+	}
+	p {
+		padding: 0 15px;
+	}
+
+}
+
+.next-prev-post {
+	text-transform: uppercase;	
+	padding: 25px 0;
+	a {
+		color: $main-site-color;
+		font-size: 2.4rem;
+		font-weight: bold;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) { 
+	.post-style {
+		padding-bottom: 50px;
+	}
+	.next-prev-post {
+		padding: 75px 0;
+	}
+}

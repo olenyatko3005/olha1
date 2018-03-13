@@ -1,0 +1,136 @@
+//blog
+
+.blog-home-style {
+	background: url(../img/blog-bg.png) no-repeat center; 
+	background-size: cover;
+	text-align: center;
+	h1 {
+		font-size: 2.8rem;
+		color: $main-font-color;
+		display: inline-block;
+		margin: 40px 0;
+	}
+}
+.element-item {
+    padding: 0 2px 20px;
+    width: 100%;
+}
+
+.main-style {
+	padding-top: 65px;
+}
+
+//Стили для страницы БЛОГ и конкретной статьи
+.article-style {
+	font-size: 0.9rem;
+	h3 {
+		font-size: 2.1rem;
+		line-height: 28px;
+	}
+	img {
+		width: 100%;
+	}
+	.article-block-style {
+		position: relative;
+		border: 1px solid rgba(0,0,0,0.3);
+	}
+	.article-text-style {
+		padding: 15px;
+	}
+	
+	h2 a {
+		font-size: 1.6rem;
+		padding: 15px 0;
+		font-weight: bold;
+		&:hover {
+			color: $main-site-color;
+			text-decoration: none;
+		}
+	}
+	.article-info {
+		text-align: center;
+		font-size: 1.2rem;
+		color: $article-info-color;
+		border-top: 1px solid rgba(0,0,0,0.3);
+		padding: 15px;
+	}
+	.clock {
+		padding: 0 15px;
+	}
+	
+	.arrow-style {
+		top: 0;
+		right: 0;
+		position: absolute;
+		padding: 7px;
+		background-color: #fff;
+		&:hover {
+			color: $main-site-color;
+		}
+	}
+	
+}
+
+.pagination-style {
+	padding: 30px 0;
+	.pages-info {
+		font-size: 2.1rem;
+		font-weight: bold;
+	}
+	.page-numbers {
+		display: inline-flex;
+		margin-top: 5px;
+		padding: 10px 17px;
+		font-size: 2.4rem;
+		font-weight: bold;
+		color: $main-font-color;
+		background-color: $main-site-color;
+		&:hover, &.active {
+			color: $background-color-icon;
+		}
+		
+	}
+	.dots {
+		background: none;
+		color: #000;
+		padding: 0 20px;
+	}
+	
+	.page-numbers .current {
+		//background-color: $additional-color;
+		font-size: 2.0rem;
+	}
+	.next, .prev {
+		display: none;
+	}
+}
+
+
+@include media-breakpoint-up(md) {
+	.pagination-style {
+		padding: 60px 0;
+		.pages-info {
+			padding-right: 30px;
+		}
+		a.prev-page {
+			padding-right: 40px;
+		}
+		a.next-page {
+			padding-left: 40px;
+		}
+	}
+
+	.blog-home-style {
+		h1 {
+			padding: 22px 200px 22px 22px;
+			font-size: 3.6rem;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.element-item {
+		padding: 0 2px 20px;
+		width: 49%;
+	}
+}
