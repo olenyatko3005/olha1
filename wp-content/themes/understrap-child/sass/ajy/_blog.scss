@@ -11,10 +11,6 @@
 		margin: 40px 0;
 	}
 }
-.element-item {
-    padding: 0 2px 20px;
-    width: 100%;
-}
 
 .main-style {
 	padding-top: 65px;
@@ -60,15 +56,17 @@
 	
 	.arrow-style {
 		top: 0;
-		right: 0;
+		right: 15px;
 		position: absolute;
-		padding: 7px;
+		padding: 8px;
 		background-color: #fff;
 		&:hover {
 			color: $main-site-color;
 		}
 	}
-	
+	.article-style-item {
+		padding-bottom: 20px;
+	}
 }
 
 .pagination-style {

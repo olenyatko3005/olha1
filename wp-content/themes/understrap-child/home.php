@@ -28,9 +28,9 @@ $container   = get_theme_mod( 'understrap_container_fluid_type' );
 			<div class="container">
 				<div class="row">
 					<div class="article-style col-md-8">
-						<div class="elements-gride">
+						<div class="row">
 							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>		
-							<article class="element-item">
+							<article class="col-md-6 article-style-item">
 								<a href="<?php echo get_permalink(); ?>" class="arrow-style"><i class="fa fa-share fa-3x" aria-hidden="true"></i></a>
 								<a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail();?></a>
 								<div class="article-block-style">
@@ -48,9 +48,9 @@ $container   = get_theme_mod( 'understrap_container_fluid_type' );
 									</div>
 								</div>
 							</article>
-							
-							<?php endwhile; ?>
-							<?php endif; ?>
+						
+						<?php endwhile; ?>
+						<?php endif; ?>
 						</div>
 						<?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
 					</div> <!-- col-md-8 end -->
